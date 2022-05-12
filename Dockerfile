@@ -1,3 +1,5 @@
+FROM node:16.3.0-alpine as base
+
 #Set workdir in the container
 WORKDIR /usr/src/app
 
