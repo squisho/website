@@ -7,13 +7,13 @@ WORKDIR /usr/src/app
 RUN mkdir website/
 
 # Copying this separately prevents re-running npm install on every code change.
-COPY website/package*.json ./website/
+COPY package*.json ./website/
 
 # Install production dependencies.
 RUN cd website/ && npm install
 
 # Copy local code to the container image.
-COPY ./website ./website/
+COPY ./ ./website/
 
 #Second docker stage for caching purposes
 FROM base as production

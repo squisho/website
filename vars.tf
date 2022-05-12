@@ -1,10 +1,10 @@
 variable "domain_name" {
-  type = string
+  type        = string
   description = "chrispetrone.com"
 }
 
 variable "bucket_name" {
-  type = string
+  type        = string
   description = "chrispetrone-terraform"
 }
 
