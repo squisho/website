@@ -1,13 +1,13 @@
 variable "domain_name" {
-  type        = string
-  description = "chrispetrone.com"
+  type    = string
+  default = "chrispetrone.com"
 }
 
 variable "bucket_name" {
-  type        = string
-  description = "chrispetrone-terraform"
+  type    = string
+  default = "chrispetrone-terraform"
 }
 
 variable "common_tags" {
-  description = "Common tags you want applied to all components."
+  default = "Common tags you want applied to all components."
 }
