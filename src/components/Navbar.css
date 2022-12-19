@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--background);
+    text-align: center;
+}
+
+
+.right {
+    float: right;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+li a {
+    display: inline-block;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li button {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--text-primary);
+    background-color: inherit;
+    border-style: none;
+}
+
+li button:hover {
+    background-color: var(--highlight);
+}
+
+li a:hover {
+    background-color: var(--highlight);
+}
