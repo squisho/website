@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
-import { IconButton } from "@mui/material";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
@@ -21,7 +20,7 @@ const Navbar = (props) => {
                 <li>
                     <Link to="/research">Research</Link>
                 </li>
-                <ul className="right">
+                {/* <ul className="right">
                     <li>
                         {props.theme === 'dark'
                             ? <button aria-label="dark mode" onClick={props.switchTheme}>
@@ -35,7 +34,7 @@ const Navbar = (props) => {
                     <li>
                         <Link to="/contact">Contact</Link>
                     </li>
-                </ul>
+                </ul> */}
 
             </ul>
         </div >
