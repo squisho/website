@@ -23,7 +23,7 @@ code {
 
 [data-theme='dark'] {
   --background: #333;
-  --text-primary: rgb(185, 200, 170);
+  --text-primary: #b9c8aa;
   --text-secondary: #963d5aff;
   --accent: #17cfd3ff;
   --highlight: #555;
@@ -32,10 +32,3 @@ code {
 footer {
   background-color: var(--background);
 }
-
-/* CSS HEX
---sage: #c8c8aaff;
---feldgrau: #506c64ff;
---dark-turquoise: #17cfd3ff;
---dark-sienna: #4c191bff;
---quinacridone-magenta: #963d5aff; */

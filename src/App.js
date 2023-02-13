@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
+import Resume from "./pages/Resume"
 import useLocalStorage from 'use-local-storage'
 import { useState } from 'react';
 
@@ -24,8 +25,8 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/portfolio' exact element={<Projects />} />
-          <Route path='/research' element={<Projects />} />
-          <Route path='/Contact' element={<Contact />} />
+          <Route path='/resume' exact element={<Resume />} />
+          <Route path='/contact' exact element={<Contact />} />
         </Routes>
       </Router>
     </div>

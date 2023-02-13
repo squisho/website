@@ -18,24 +18,34 @@ const Navbar = (props) => {
                     <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <Link to="/research">Research</Link>
+                    <Link to="/resume">Resume</Link>
                 </li>
-                {/* <ul className="right">
-                    <li>
-                        {props.theme === 'dark'
-                            ? <button aria-label="dark mode" onClick={props.switchTheme}>
-                                <DarkModeIcon />
-                            </button>
-                            : <button aria-label="Dark Mode" onClick={props.switchTheme}>
-                                <LightModeIcon />
-                            </button>
-                        }
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul> */}
-
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+                <li className="right">
+                    {props.theme === 'dark'
+                        ? <button aria-label="dark mode" onClick={props.switchTheme}>
+                            <DarkModeIcon />
+                        </button>
+                        : <button aria-label="Dark Mode" onClick={props.switchTheme}>
+                            <LightModeIcon />
+                        </button>
+                    }
+                </li>
+                {/* <li className="right">
+                    {props.theme === 'dark'
+                        ? <button aria-label="dark mode" onClick={props.switchTheme}>
+                            <DarkModeIcon />
+                        </button>
+                        : <button aria-label="Dark Mode" onClick={props.switchTheme}>
+                            <LightModeIcon />
+                        </button>
+                    }
+                </li>
+                <li className="right">
+                    <Link to="/contact">Contact</Link>
+                </li> */}
             </ul>
         </div >
     );
