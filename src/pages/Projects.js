@@ -1,13 +1,34 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Box } from '@mui/material';
+
 const Projects = () => {
     return (
-        <div>
-            <h3>Dogs</h3>
-            <div>
-                <img src="https://i.pinimg.com/236x/d6/4d/0b/d64d0ba839a4604112d651957c620a37--small-watercolor-paintings-watercolour-bee.jpg" />
-            </div>
-        </div>
+        <Box sx={{ flexGrow: 0.75 }}>
+            <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
+                <Grid item container direction="row" name="DevXP" justifyContent="center" spacing={3}>
+                    <Grid item xs={3}>
+                        <img width="150px" src="content/devxp.png"></img>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <h1>DevXP</h1>
+                        <p> DevXP is an IaaS tool built to help developers build their Terraform configurations and automatically deploy them to their repositories.</p>
+                    </Grid>
+
+                </Grid>
+
+                <Grid item name="InfoVis" spacing={2}>
+                    InfoVis
+                </Grid>
+
+                <Grid item name="IVEfP" spacing={2}>
+                    Psyc
+                </Grid>
+
+                <Grid item name="soundboy" spacing={2}>
+                    Soundboy
+                </Grid>
+            </Grid>
+        </Box>
     );
 }
 export default Projects;
