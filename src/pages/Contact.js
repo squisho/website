@@ -1,10 +1,16 @@
 import React from 'react';
 const Contact = () => {
     return (
-        <div>
-            <h3>Dogs</h3>
+        <div style={{display: 'flexbox', justifyContent: 'center'}}>
+            <div>Contact</div>
             <div>
-                Contact me here at phone number email socials etc
+                LinkedIn
+            </div>
+            <div>
+                github
+            </div>
+            <div>
+                email
             </div>
         </div>
     );
