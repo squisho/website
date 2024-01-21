@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import useLocalStorage from 'use-local-storage'
+import { Divider } from '@mui/material';
 import { useState } from 'react';
 
 function App() {
@@ -20,15 +21,15 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
-      <Router>
-        <Navbar theme={theme} switchTheme={switchTheme} />
+      <div>
+                <Navbar theme={theme} switchTheme={switchTheme} />
+      </div>
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/portfolio' exact element={<Projects />} />
           <Route path='/resume' exact element={<Resume />} />
           <Route path='/contact' exact element={<Contact />} />
         </Routes>
-      </Router>
     </div>
 
   );

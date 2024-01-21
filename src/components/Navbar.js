@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import "./Navbar.css"
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import { Divider } from "@mui/material";
 
 const Navbar = (props) => {
 
     console.log(props.theme)
 
     return (
-        <div>
+        <div className='navBar'>
             <ul>
                 <li>
                     <Link to="/">Home</Link>
@@ -33,20 +34,9 @@ const Navbar = (props) => {
                         </button>
                     }
                 </li>
-                {/* <li className="right">
-                    {props.theme === 'dark'
-                        ? <button aria-label="dark mode" onClick={props.switchTheme}>
-                            <DarkModeIcon />
-                        </button>
-                        : <button aria-label="Dark Mode" onClick={props.switchTheme}>
-                            <LightModeIcon />
-                        </button>
-                    }
-                </li>
-                <li className="right">
-                    <Link to="/contact">Contact</Link>
-                </li> */}
             </ul>
+            
+        <Divider/>
         </div >
     );
 };
