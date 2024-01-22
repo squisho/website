@@ -7,8 +7,6 @@ import { Divider } from "@mui/material";
 
 const Navbar = (props) => {
 
-    console.log(props.theme)
-
     return (
         <div className='navBar'>
             <ul>

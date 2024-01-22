@@ -14,16 +14,13 @@ function App() {
   const [theme, setTheme] = useState("dark");
 
   const switchTheme = () => {
-    console.log("switching theme");
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
   }
 
   return (
     <div className="App" data-theme={theme}>
-      <div>
                 <Navbar theme={theme} switchTheme={switchTheme} />
-      </div>
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/portfolio' exact element={<Projects />} />
