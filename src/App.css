@@ -6,3 +6,7 @@
   height: 100vh;
   transition: all .5s;
 }
+
+.portfolio {
+  background-color: var(--background);
+}

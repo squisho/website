@@ -14,8 +14,8 @@ code {
 }
 
 :root {
-  --background: rgb(255, 251, 230);
-  --text-primary: #506c64ff;
+  --background: #fefffe;
+  --text-primary: #333;
   --text-secondary: #4c191bff;
   --accent: #17cfd3ff;
   --highlight: #DDD;
@@ -23,12 +23,12 @@ code {
 
 [data-theme='dark'] {
   --background: #333;
-  --text-primary: #b9c8aa;
+  --text-primary: #b0c0b0;
   --text-secondary: #963d5aff;
   --accent: #17cfd3ff;
   --highlight: #555;
 }
-
+/* 
 footer {
   background-color: var(--background);
-}
+} */
