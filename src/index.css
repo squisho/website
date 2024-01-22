@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,6 +22,7 @@ code {
   --text-secondary: #4c191bff;
   --accent: #17cfd3ff;
   --highlight: #DDD;
+  --visited-link: #607060;
 }
 
 [data-theme='dark'] {
@@ -28,4 +31,5 @@ code {
   --text-secondary: #963d5aff;
   --accent: #17cfd3ff;
   --highlight: #555;
+  --visited-link: #FFF;
 }

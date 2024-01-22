@@ -6,6 +6,10 @@
   height: 100vh;
   transition: all .5s;
 }
+a:visited {
+  color: var(--visited-link)
+}
+
 
 .portfolio {
   background-color: var(--background);
