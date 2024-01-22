@@ -11,23 +11,22 @@ const Navbar = (props) => {
         <div className='navBar'>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link className="button" to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/portfolio">Portfolio</Link>
+                    <Link className="button" to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <Link to="/resume">Resume</Link>
+                    <Link className="button" to="/resume">Resume</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link className="button" to="/contact">Contact</Link>
                 </li>
                 <li className="right">
                     {props.theme === 'dark'
-                        ? <button aria-label="dark mode" onClick={props.switchTheme}>
-                            <DarkModeIcon />
-                        </button>
-                        : <button aria-label="Dark Mode" onClick={props.switchTheme}>
+                        ? 
+                            <DarkModeIcon onClick={props.switchTheme} />
+                        : <button onClick={props.switchTheme}>
                             <LightModeIcon />
                         </button>
                     }

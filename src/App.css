@@ -6,8 +6,17 @@
   height: 100vh;
   transition: all .5s;
 }
+
+.navBar:a:visited {
+  color:blue;
+}
+
 a:visited {
-  color: var(--visited-link)
+  color: var(--visited-link);
+}
+
+.button {
+  color: var(--text-primary) !important;
 }
 
 
