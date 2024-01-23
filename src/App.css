@@ -7,8 +7,8 @@
   height: 100vh;
 }
 
-body {
-background-color: var(--background);
+.portfolio{
+  background-color: var(--background);
 }
 
 .navBar:a:visited {

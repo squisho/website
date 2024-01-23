@@ -25,10 +25,9 @@ const Navbar = (props) => {
                 <li className="right">
                     {props.theme === 'dark'
                         ? 
-                            <DarkModeIcon onClick={props.switchTheme} />
-                        : <button onClick={props.switchTheme}>
-                            <LightModeIcon />
-                        </button>
+                            <DarkModeIcon style={{padding:12}} onClick={props.switchTheme} />
+                        :
+                            <LightModeIcon style={{padding:12}} onClick={props.switchTheme} />
                     }
                 </li>
             </ul>

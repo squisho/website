@@ -7,7 +7,7 @@ const textStyle = {
 
 const Projects = () => {
     return (
-        <Grid name="portfolio" container direction="column" padding={3}> 
+        <Grid className="portfolio" name="portfolio" container direction="column" padding={3} style={{"marginTop":"-1px"}}> 
                 <Grid container item direction="row" justifyContent="center" alignItems='center' name="DevXP">
                     <Grid item style={{display:'flex', justifyContent:'center'}} xs={3}> 
                         <a href="https://devxp.ca/">
@@ -16,7 +16,7 @@ const Projects = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <h3>DevXP</h3>
-                        <p style={{fontSize:16}}> Started in January 2022 as part of a startup programming course, DevXP is a DevOps-aaS platform that streamlines and manages cumbersome and intricate DevOps pipeliens into a simple and easy to use interface.  </p>
+                        <p style={{fontSize:16}}> Started in January 2022 as part of a startup programming course, DevXP is a DevOps-aaS platform that streamlines and manages cumbersome and intricate DevOps pipelines into a simple and easy to use interface.  </p>
                     </Grid>
 
                 </Grid>

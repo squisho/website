@@ -8,10 +8,11 @@ const Contact = () => {
                 <Grid container direction="row" name="email" justifyContent="center" alignItems="center" columnSpacing={20}>
 
                     <Grid item >
-                        <text>Please contact me via e-mail any time at </text>
+                        <p>Please contact me via e-mail any time at&nbsp;
                         <Link to="" onClick={() => window.location = 'mailto:ctpetrone@gmail.com'}>
-                        <text style={{textDecorationLine:'underline'}}>ctpetrone@gmail.com</text>
+                        <b style={{textDecorationLine:'bold'}}>ctpetrone@gmail.com</b>
                         </Link>
+                        </p>
                     </Grid>
 
                 </Grid>
@@ -20,11 +21,11 @@ const Contact = () => {
 
                     <Grid item style={{display:'flex', justifyContent:'center'}}> 
                         <a href="https://github.com/squisho" target="_blank" rel="noreferrer">
-                        <img width="50px" src="content/github.jpg" alt="GMail Logo"></img>
+                        <img width="50px" style={{borderRadius:"13%"}} src="content/github.png" alt="GitHub Logo"></img>
                         </a>
                     </Grid>
                     <Grid item style={{display:'flex', justifyContent:'center'}}> {/*style={{display:'flex',justifyContent:'center',alignItems:'center'}} */}
-                        <a href="https://www.linkedin.com/in/cpetrone/s">
+                        <a href="https://www.linkedin.com/in/cpetrone/s" target="_blank" rel="noreferrer">
                         <img width="50px" src="content/linkedin.png" alt="GMail Logo"></img>
                         </a>
                     </Grid>

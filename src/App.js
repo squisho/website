@@ -9,12 +9,13 @@ import { useState } from 'react';
 
 function App() {
 
+  console.log(document.documentElement.style.getPropertyValue('--background'))
   const [theme, setTheme] = useState("dark");
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    document.documentElement.style.setProperty('--background', newTheme === 'light' ? '#fefffe' : '#333');
+    //document.documentElement.style.setProperty('--background', newTheme === 'light' ? '#fefffe' : '#333');
   }
 
   return (
