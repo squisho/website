@@ -5,8 +5,6 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
-// import useLocalStorage from 'use-local-storage'
-// import { Divider } from '@mui/material';
 import { useState } from 'react';
 
 function App() {
@@ -16,6 +14,7 @@ function App() {
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+    document.documentElement.style.setProperty('--background', newTheme === 'light' ? '#fefffe' : '#333');
   }
 
   return (

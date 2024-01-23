@@ -3,8 +3,12 @@
   background-color: var(--background);
   font-size: large;
   font-weight: bold;
-  height: 100vh;
   transition: all .5s;
+  height: 100vh;
+}
+
+body {
+background-color: var(--background);
 }
 
 .navBar:a:visited {
@@ -19,7 +23,3 @@ a:visited {
   color: var(--text-primary) !important;
 }
 
-
-.portfolio {
-  background-color: var(--background);
-}
