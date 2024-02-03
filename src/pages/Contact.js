@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
     return (
         <Grid className="contact" container direction="column" columnSpacing={2.5} paddingTop={5}>
-                <Grid container direction="row" name="email" justifyContent="center" alignItems="center" columnSpacing={20}>
+                <Grid item container direction="row" name="email" justifyContent="center" alignItems="center" columnSpacing={11}>
 
                     <Grid item >
                         <p>Please contact me via e-mail any time at&nbsp;
