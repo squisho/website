@@ -5,6 +5,7 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
+import TreeMap from './pages/TreeMap';
 import { useState } from 'react';
 
 function App() {
@@ -20,13 +21,14 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
-                <Navbar theme={theme} switchTheme={switchTheme} />
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/portfolio' exact element={<Projects />} />
-          <Route path='/resume' exact element={<Resume />} />
-          <Route path='/contact' exact element={<Contact />} />
-        </Routes>
+      <Navbar theme={theme} switchTheme={switchTheme} />
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/portfolio' exact element={<Projects />} />
+        <Route path='/resume' exact element={<Resume />} />
+        <Route path='/contact' exact element={<Contact />} />
+        <Route path='/treemap' exact element={<TreeMap />} />
+      </Routes>
     </div>
 
   );
